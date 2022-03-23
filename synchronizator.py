@@ -124,7 +124,7 @@ if __name__ == '__main__':
         try:
             print(f'{datetime.now().strftime("%Y-%m-%d %X")} Starting synchronization...')
             FolderMatch(source_folder, replica_folder, log_file)
-            print(f'{datetime.now().strftime("%Y-%m-%d %X")} Synchronization is completed. Next sync will be in {sync_interval}{args.tm}')
+            print(f'{datetime.now().strftime("%Y-%m-%d %X")} Synchronization is completed. Next synchronization will be in {sync_interval}{args.tm}')
             sleep(int(sync_interval) * sync_m)
         except KeyboardInterrupt:
             print('Program was interrupted.')
